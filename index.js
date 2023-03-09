@@ -63,3 +63,13 @@ var swiper = new Swiper(".review-slider",{
     }
     
 });
+
+/*Loader Section*/
+
+function loader(){
+    document.querySelector(".loder-container").classList.add("fade-out")
+}
+function fadeOut(){
+    setInterval(loader, 3000)
+}
+window.onload = fadeOut;

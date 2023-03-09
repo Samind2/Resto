@@ -461,7 +461,7 @@ header .flex .navbar a{
 
 /*Review Section*/
 .review .slide{
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: var(--box-shadow);
     border: 0.1rem solid rgba(0,0,0,0.2);
     border-radius: 0.5rem;
@@ -558,4 +558,72 @@ header .flex .navbar a{
 
 .order form .btn{
     margin-top: 0;
+}
+
+/*Footer Section*/
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: 0.7rem 0;
+    font-size: 1.6rem;
+    color: var(--lightcolor);
+}
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    border-top: 0.1rem solid rgba(0,0,0,0,1);
+    font-size: 2rem;
+    color: var(--black);
+    padding :0.5rem;
+    padding-top:3rem;
+    margin-top:3rem;
+
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+.footer .credit span:hover{
+    text-decoration: underline;
+}
+
+/*Loader Section*/
+
+.loder-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loder-container img{
+    width: 35rem;
+}
+
+.loder-container.fade-out{
+    top: -110%;
+    opacity: 0;
 }
